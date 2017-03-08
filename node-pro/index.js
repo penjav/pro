@@ -10,6 +10,7 @@ var gell = express();
 
 // routes and middleware
 gell.use(express.static(path.resolve(__dirname,"table")));
+gell.set("port",process.env.PORT || 5000);
 gell.set("views",path.join(__dirname,"table"));
 gell.set("view engine","ejs");
 
@@ -49,6 +50,6 @@ gell.use(function(req,res){
 });
 
 // create server
-http.createServer(gell).listen(5000,function(){
-	console.log("server started on port 5000");
+http.createServer(gell).listen(gell.get("port"),function(){
+	console.log("server started on port "+ gell.get("port"));
 });
