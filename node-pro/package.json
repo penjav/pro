@@ -1,0 +1,15 @@
+{
+  "name": "node-pro",
+  "version": "0.0.0",
+  "description": "Generated with Eclipse npm Tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "dependencies":{
+	  "express":"~4.15.2",
+	  "morgan":"~1.8.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
